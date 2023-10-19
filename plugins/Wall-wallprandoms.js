@@ -129,10 +129,11 @@ const handler = async (m, {command, conn}) => {
     conn.sendMessage(m.chat, {image: {url: haha.data}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 
-  if (command == 'wallhp') {
-    const haha = await conn.getFile(`https://api.zahwazein.xyz/randomimage/wallhp?apikey=${apikey}`);
+  if (command == 'bts') {
+    const res = (await axios.get(`https://raw.githubusercontent.com/AbhishekSuresh2/ABHISHEK-SER/main/src/Abhi-Json/random-bts`)).data;
+    const res2 = await res[Math.floor(res.length * Math.random())];
     await conn.reply(m.chat, global.wait, m);
-    conn.sendMessage(m.chat, {image: {url: haha.data}, caption: `_${command}_`.trim()}, {quoted: m});
+    conn.sendMessage(m.chat, {image: {url: res2}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 
 if (command == 'ff') {
@@ -142,7 +143,7 @@ if (command == 'ff') {
     conn.sendMessage(m.chat, {image: {url: res2}, caption: `_${command}_`.trim()}, {quoted: m});
   }
 };
-handler.command = ['wpmountain', 'pubg', 'wpgaming', 'wpaesthetic', 'wprandom', 'coffee', 'pentol', 'cartoon', 'cyberspace', 'tech', 'doraemon', 'hacker', 'planet', 'randompp', 'wpaesthetic2', 'wpvehiculo', 'wallhp', 'ff'];
+handler.command = ['wpmountain', 'pubg', 'wpgaming', 'wpaesthetic', 'wprandom', 'coffee', 'pentol', 'cartoon', 'cyberspace', 'tech', 'doraemon', 'hacker', 'planet', 'randompp', 'wpaesthetic2', 'wpvehiculo', 'bts', 'ff'];
 export default handler;
 
 async function wallpaper(title, page = '1') {

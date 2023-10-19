@@ -7,6 +7,7 @@ let readMore = more.repeat(850)
 let lkr = `╭───❮ *𝙱𝙾𝚃 𝙼𝙴𝙽𝚄* ❯
 │ _${usedPrefix}ping_
 │ _${usedPrefix}uptime_
+│ _${usedPrefix}enable_
 │ _${usedPrefix}alive_
 │ _${usedPrefix}owner_
 │ _${usedPrefix}report_
@@ -21,6 +22,10 @@ let lkr = `╭───❮ *𝙱𝙾𝚃 𝙼𝙴𝙽𝚄* ❯
 ╰─────────────⦁
 
 ╭───❮ *𝙾𝚆𝙽𝙴𝚁 𝙼𝙴𝙽𝚄* ❯
+│ _${usedPrefix}*on/off* public_
+│ _${usedPrefix}*on/off* autoreact_
+│ _${usedPrefix}update_
+│ _${usedPrefix}sudo_
 │ _${usedPrefix}autoadmin_
 │ _${usedPrefix}left_
 │ _${usedPrefix}banchat_
@@ -28,13 +33,14 @@ let lkr = `╭───❮ *𝙱𝙾𝚃 𝙼𝙴𝙽𝚄* ❯
 │ _${usedPrefix}ban_
 │ _${usedPrefix}unban_
 │ _${usedPrefix}banlist_
+│ _${usedPrefix}block_
+│ _${usedPrefix}unblock_
 │ _${usedPrefix}blocklist_
 │ _${usedPrefix}bc_
 │ _${usedPrefix}bcgc_
-│ _${usedPrefix}join_
-│ _${usedPrefix}update_ 
+│ _${usedPrefix}join_ 
 │ _${usedPrefix}restart_
-│ _${usedPrefix}setppbot_
+│ _${usedPrefix}setpp_
 │ _${usedPrefix}setprefix_
 │ _${usedPrefix}resetprefix_
 │ _${usedPrefix}resetuser_
@@ -43,47 +49,69 @@ let lkr = `╭───❮ *𝙱𝙾𝚃 𝙼𝙴𝙽𝚄* ❯
 ╰─────────────⦁
 ${readMore} 
 ╭───❮ *𝙶𝚁𝙾𝚄𝙿 𝙼𝙴𝙽𝚄* ❯
-│ _${usedPrefix}kick *<@tag>*_
-│ _${usedPrefix}promote *<@tag>*_
-│ _${usedPrefix}demote *<@tag>*_
+│ _${usedPrefix}kick *@tag*_
+│ _${usedPrefix}promote *@tag*_
+│ _${usedPrefix}demote *@tag*_
 │ _${usedPrefix}infogroup_
-│ _${usedPrefix}getbio *<@tag>*_
+│ _${usedPrefix}getbio *@tag*_
 │ _${usedPrefix}resetlink_
 │ _${usedPrefix}link_
-│ _${usedPrefix}on/off antilink_
-│ _${usedPrefix}on/off antidelete_
+│ _${usedPrefix}*on/off* antilink_
+│ _${usedPrefix}*on/off* antidelete_
 │ _${usedPrefix}invite_
-│ _${usedPrefix}setpp *<image>*_
-│ _${usedPrefix}setname *<text>*_
-│ _${usedPrefix}setdesc *<text>*_
-│ _${usedPrefix}setwelcome *<text>*_
-│ _${usedPrefix}setbye *<text>*_
-│ _${usedPrefix}hidetag *<text/image/audio/vid>*_
-│ _${usedPrefix}warn *<@tag>*_
-│ _${usedPrefix}unwarn *<@tag>*_
+│ _${usedPrefix}setppgc *image*_
+│ _${usedPrefix}setname *text*_
+│ _${usedPrefix}setdesc *text*_
+│ _${usedPrefix}setwelcome *text*_
+│ _${usedPrefix}setbye *text*_
+│ _${usedPrefix}hidetag *text/image/audio/vid*_
+│ _${usedPrefix}warn *@tag*_
+│ _${usedPrefix}unwarn *@tag*_
 │ _${usedPrefix}listwarn_
 │ _${usedPrefix}listnum_
 │ _${usedPrefix}kicknum_
-│ _${usedPrefix}group *<open/close>*_
-│ _${usedPrefix}enable_
+│ _${usedPrefix}group *open/close*_
 │ _${usedPrefix}tagall_
+╰─────────────⦁
+
+╭───❮ *𝙵𝚄𝙽 𝙼𝙴𝙽𝚄* ❯
+│ _${usedPrefix}hearts_
+│ _${usedPrefix}moon_
+│ _${usedPrefix}question_
+│ _${usedPrefix}character_
+│ _${usedPrefix}truth_
+│ _${usedPrefix}dare_
+│ _${usedPrefix}flirt_
+│ _${usedPrefix}gay_
+│ _${usedPrefix}meme_
+│ _${usedPrefix}ship_
+│ _${usedPrefix}kill_
+│ _${usedPrefix}kiss_
+│ _${usedPrefix}pat_
+│ _${usedPrefix}slap_
+│ _${usedPrefix}waste_
+│ _${usedPrefix}simpcard_
+│ _${usedPrefix}hornycard_
+│ _${usedPrefix}ytcomment_
+│ _${usedPrefix}stupid_
+│ _${usedPrefix}lolicon_
 ╰─────────────⦁
 
 ╭───❮ *𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙴𝙽𝚄* ❯
 │ _${usedPrefix}play_
 │ _${usedPrefix}play2_
 │ _${usedPrefix}yts_
-│ _${usedPrefix}insta <link>_
+│ _${usedPrefix}insta *link*_
 │ _${usedPrefix}img_
 │ _${usedPrefix}pinterest_
-│ _${usedPrefix}mediafire <link>_
-│ _${usedPrefix}gdrive <link>_
-│ _${usedPrefix}gitclone <link>_
-│ _${usedPrefix}twitter <link>_
-│ _${usedPrefix}tiktok <link>_
+│ _${usedPrefix}mediafire *link*_
+│ _${usedPrefix}gdrive *link*_
+│ _${usedPrefix}gitclone *link*_
+│ _${usedPrefix}twitter *link*_
+│ _${usedPrefix}tiktok *link*_
 │ _${usedPrefix}tiktokstalk_
 │ _${usedPrefix}spotify_
-│ _${usedPrefix}fb <link>_
+│ _${usedPrefix}fb *link*_
 ╰─────────────⦁
 
 ╭───❮ *𝙴𝙲𝙾𝙽𝙾𝙼𝚈 𝙼𝙴𝙽𝚄* ❯
@@ -106,26 +134,6 @@ ${readMore}
 │ _${usedPrefix}tomoney_
 ╰─────────────⦁
 
-╭───❮ *𝙵𝚄𝙽 𝙼𝙴𝙽𝚄* ❯
-│ _${usedPrefix}character_
-│ _${usedPrefix}truth_
-│ _${usedPrefix}dare_
-│ _${usedPrefix}flirt_
-│ _${usedPrefix}gay_
-│ _${usedPrefix}meme_
-│ _${usedPrefix}ship_
-│ _${usedPrefix}kill_
-│ _${usedPrefix}kiss_
-│ _${usedPrefix}pat_
-│ _${usedPrefix}slap_
-│ _${usedPrefix}waste_
-│ _${usedPrefix}simpcard_
-│ _${usedPrefix}hornycard_
-│ _${usedPrefix}ytcomment_
-│ _${usedPrefix}stupid_
-│ _${usedPrefix}lolicon_
-╰─────────────⦁
-
 ╭───❮ *𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 𝙼𝙴𝙽𝚄* ❯
 │ _${usedPrefix}toanime_
 │ _${usedPrefix}tomp3_
@@ -134,6 +142,7 @@ ${readMore}
 ╰─────────────⦁
 
 ╭───❮ *𝚁𝙰𝙽𝙳𝙾𝙼 𝙼𝙴𝙽𝚄* ❯
+│ _${usedPrefix}bts_
 │ _${usedPrefix}cr7_
 │ _${usedPrefix}cat_
 │ _${usedPrefix}coffee_
@@ -252,8 +261,8 @@ ${readMore}
 ╭───❮ *𝙽𝚂𝙵𝚆 𝙼𝙴𝙽𝚄* ❯
 │ _${usedPrefix}on nsfw_
 │ _${usedPrefix}off nsfw_
-│ _${usedPrefix}hentais *<text>*_
-│ _${usedPrefix}xnxxdl <link>_
+│ _${usedPrefix}hentais *text*_
+│ _${usedPrefix}xnxxdl *link*_
 ╰────────────⦁
 
 ╭───❮  *🎯𝙰𝙱𝙷𝙸𝚂𝙷𝙴𝙺-𝚂𝙴𝚁* ❯
