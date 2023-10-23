@@ -1,6 +1,6 @@
 {
-  "name": "Costomizable WhatsApp Bot",
-  "description": " Whatsapp bot.",
+  "name": "ABHISHEK-SER",
+  "description": " Costomizable WhatsApp Bot",
   "keywords": [
     "whatsapp bot"
   ],
@@ -8,9 +8,10 @@
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "Put Your SESSION_ID Here",
+      "description": "Enter Your Session Id Here",
       "required": true,
       "value": ""
+    }
     },
     "buildpacks": [
     {
